@@ -24,7 +24,7 @@
         var urlParams = new URLSearchParams(window.location.search);
 
         // Determine whether the person won the contest at random
-        let winner = Math.random() < 0.5 ? true : false
+        let winner = true //Math.random() < 0.5 ? true : false
 
         // Gather some of the data from the querystring
         let name = `${urlParams.get('firstname')} ${urlParams.get('lastname')}`
