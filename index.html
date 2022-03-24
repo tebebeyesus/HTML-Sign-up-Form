@@ -32,16 +32,16 @@
                     <label for="city">City</label>
                     <input type="text" id="city" name="city">
     
-                    <label for="State">State</label> 
-    
-                    <select name="State" id="State">
-                         <option value="Al">Al</option>
-                         <option value="MD">MD</option>
-                         <option value="CA">CA</option>
-                         <option value="ME">ME</option>
-                         <option value="MA">MA</option>
-                         <option value="DC">DC</option>
-                    </select>
+                    <label for="state">State</label> 
+                    <input name="state" list="state-list" id="state">
+                    <datalist name="state" id="state-list">
+                         <option value="Al">Alabama</option>
+                         <option value="MD">Maryland</option>
+                         <option value="CA">California</option>
+                         <option value="ME">Maine</option>
+                         <option value="MA">Massechesettes</option>
+                         <option value="DC">Washington DC</option>
+                    </datalist>
             </fieldset>
 
             <fieldset>
@@ -49,7 +49,7 @@
                  <h3>Choose your location</h3>
                 <input type="radio" id="Japan" value="Japan" name="location"> <label for="Japan">Japan</label>
                 <input type="radio" id="Mexico" value="Mexico" name="location"> <label for="Mexico">Maryland</label>
-                <input type="radio" id="Ethiopia" value="Ethiopia" name="location"> <label for="Ethiopia">Washington</label>
+                <input type="radio" id="Ethiopia" value="Ethiopia" name="location" checked> <label for="Ethiopia">Ethiopia</label>
                 <br> <br>
                  
                 <h3>Favorite Color</h3>
@@ -58,7 +58,7 @@
                 <br><br>
                 <h3>Extra Add-ons</h3>                
                 <input type="checkbox" id="bag" name="extras" value="bag"><label for="bag">Bag</label>
-                <input type="checkbox" id="carryon" name="extras" value="carryon"><label for="carryon">Carryon</label>
+                <input type="checkbox" id="carryon" name="extras" value="carryon" checked><label for="carryon">Carryon</label>
                 <input type="checkbox" id="shoe" name="extras" value="shoe"><label for="shoe">Shoe</label>
                 <br><br>
                 <input type="submit" value="Submit"> 
