@@ -12,18 +12,23 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form action="results.html" method="GET"> <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="get"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span> <input type="text" id="firstname" name="firstname" required  minlength="2" maxlength="35"> 
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*</span> <input type="text" id="lastname" name="lastname" required minlength="2" maxlength="35"> 
+                <label for="age">Your Age</label>
+                <input type="number" id="age" name="age" min="21" max="120">
+                <h5>one must be age 21 or older to enter the contest</h5>
+                <label for="password">Password</label>
+                <span class="required-field">*</span> <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{6}" title="6-Character AlphaNumeric Pass code" required>
                 <!-- TODO: Create a "lastname" input with type "text" -->
             </div>
             <fieldset>
                 <legend> Your Contact Info </legend>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <span class="required-field">*</span><input type="email" id="email" name="email" required> 
     
     
                     <label for="address">Address </label>
@@ -42,6 +47,9 @@
                          <option value="MA">Massechesettes</option>
                          <option value="DC">Washington DC</option>
                     </datalist>
+
+                    <label for="zipcode">ZipCode</label>
+                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-Digit US Zipcode">
             </fieldset>
 
             <fieldset>
